@@ -12,4 +12,13 @@ Cree una app con las siguientes características:
 
 * Use el mismo nivel de API y el lenguaje de programación Kotlin. Al final crearemos dos Activities con las siguientes características
 
-<img src="Medios\3.PNG"/> <img src="Medios\4.PNG"/>
+
+
+## Tarea 1.2: Diseñando la primera Activity
+
+Se crea el diseño de la interfaz de usuario para la aplicación Dos Actividades en el editor de diseño mediante las características ConstraintLayout.
+
+### Detallando las propiedades del activity_main
+
+* Abra activity_main.xml desde el panel Proyecto > Android si aún no está abierto. Si la pestaña Design (diseño) aún no está seleccionada, haga clic en ella.
+<img src="Medios\5.png"/>
