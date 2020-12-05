@@ -12,4 +12,4 @@ Cree una app con las siguientes características:
 
 * Use el mismo nivel de API y el lenguaje de programación Kotlin. Al final crearemos dos Activities con las siguientes características
 
-<img src="Medios\3.PNG"/>
+<img src="Medios\3.PNG"/> <img src="Medios\4.PNG"/>
