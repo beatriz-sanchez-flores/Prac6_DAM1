@@ -76,5 +76,40 @@ Los extras de intent son pares clave/valor en un paquete (Bundle). Un paquete (B
 
 ### Modificando la segunda activity para obtener los extras
  * Abra el fichero Segunda.kt para agregar código al método onCreate()
- 
+
+<img src="Medios\17.PNG"/>
+
  * Obtenga el intent que activó esta activity
+
+ <img src="Medios\19.PNG"/>
+
+ * Obtenga la cadena que contiene el mensaje de los extras de Intent usando el valor del objeto creado en la activity principal y obtenerlo usando la clave MainActivity.EXTRA_MESSAGE:
+
+ <img src="Medios\20.PNG"/>
+
+ 
+ Use findViewById() para obtener la referencia del TextView para el mensaje del layout
+ 
+ <img src="Medios\21.PNG"/>
+
+* Establezca el texto del TextView con la cadena obtenida del extra del intent
+
+<img src="Medios\22.PNG"/>
+
+Ejecute la aplicación. Cuando escriba el mensaje en el MainActivity, haga clic en el botón Enviar, se lanza la SegundaActivity y se muestra el mensaje
+
+Muestre resultados a través de capturas de pantalla y comentarios
+
+<img src="Medios\23.jpg"/>
+
+Acá agregue la palabra hola 
+
+<img src="Medios\24.jpg"/>
+
+Ya acá me muestra el texto que escribi en la primer ventana
+
+### 1.4 Devolver datos al activity principal
+
+Ahora que tiene una aplicación que lanza una nueva activity y le envía datos, el paso final es devolver los datos de la segunda activity a la actividad principal. También usa un intent y extras de intención para esta tarea.
+
+Establezca el evento onClick al botón con identificador btRes.
