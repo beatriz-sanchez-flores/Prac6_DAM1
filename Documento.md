@@ -112,4 +112,60 @@ Ya acá me muestra el texto que escribi en la primer ventana
 
 Ahora que tiene una aplicación que lanza una nueva activity y le envía datos, el paso final es devolver los datos de la segunda activity a la actividad principal. También usa un intent y extras de intención para esta tarea.
 
-Establezca el evento onClick al botón con identificador btRes.
+### Siga los siguientes pasos:
+
+* Abra el fichero activity_segunda.xml y verifique que dispone de la estructura indicada al principio de estas tareas con sus identificadores correspondientes.
+
+* Establezca el evento onClick al botón con identificador btRes.
+
+<img src="Medios\24.PNG"/>
+
+Solamente queda crear el método devolverRespuesta(), el cual puede agregarlo después del cierre de llave del método onCreate().
+
+<img src="Medios\25.PNG"/>
+
+### Crear respuesta del intent en la segunda Activity
+
+Los datos de respuesta de la segunda actividad a la actividad principal se envían en un Intent extra. Construye este intent de retorno y coloca los datos en él de la misma manera que lo hace para el intento de envío.
+
+* Abre Segunda.kt por si aún no lo está
+
+* Agrega un companion object para obtener una sola instancia de objeto sin necesidad de crear una nueva, esto se debe agregar después de la apertura de la llave de la clase Segunda, al inicio para no generar confusiones
+
+<img src="Medios\26.PNG"/>
+
+* Agregue el código del método devolverRespuesta() creado en la tarea anterior
+
+<img src="Medios\27.PNG"/>
+
+### Tarea 1.5: Obtener la respuesta en el MainActivity y mostrarlo en el TextView
+
+Cuando usa un intent explícito para iniciar otra activity, es posible que no espere recuperar ningún dato; solo está activando esa actividad. En ese caso, use startActivity() para iniciar la nueva activity como lo hizo anteriormente en esta práctica. Sin embargo, si desea recuperar datos de la activity activada, debe iniciarla con startActivityForResult().
+
+En esta tarea, modifica la aplicación para iniciar Segunda Activity esperando un resultado, para extraer los datos devueltos del Intent y para mostrar esos datos en los elementos TextView que creó en la última tarea.
+
+* Abra el fichero de MainActivity.kt
+* Borre o comente la línea de startActivity(intent) a startActivityForResult(intent, TEXT_REQUEST), recuerde que TEXT_REQUEST está dentro del companion object
+
+<img src="Medios\28.PNG"/>
+
+Pasaremos a anular el método onActivityResult(), vamos a Code > Override methods o simplemente CTRL + O, busque el método onActivityResult()
+
+<img src="Medios\29.png"/>
+
+* Agregue el siguiente código a este método para obtener el extra y establecer en el TextView indicado para esto que se identifica con datoRecibido.
+
+<img src="Medios\30.PNG"/>
+
+* Ahora cuando envíes datos de la segunda Activity hacia la principal, deberías de obtener el mensaje.
+
+<img src="Medios\32.PNG"/>
+
+### Tarea 1.6: Crear el activity de Scrolling
+
+Muestra el componente de interfaz de usuario de ScrollView. ScrollView es un ViewGroup que en este ejemplo contiene un TextView. Muestra una página de texto larga, en este caso, una reseña de un álbum de música, que el usuario puede desplazarse verticalmente para leer deslizando el dedo hacia arriba y hacia abajo. Aparece una barra de desplazamiento en el margen derecho. La aplicación muestra cómo puede usar texto formateado con etiquetas HTML mínimas para configurar el texto en negrita o cursiva, y con caracteres de nueva línea para separar párrafos. También puede incluir enlaces web activos en el texto.
+
+* Agregue un nuevo Activity dando clic derecho en la carpeta app o en res en el proyecto
+
+<img src="Medios\31.PNG"/>
+
