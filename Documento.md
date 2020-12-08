@@ -196,9 +196,16 @@ Con este Activity se pondrá a prueba todo lo aprendido hasta el momento, consta
 
 * Obtenga la instancia del Button usando el método findViewById () .
 
+<img src="Medios\38.png"/>
+
 * Cree el método realizarSuma () y establezca el resultado de la suma en la propiedad text de etResultadoSuma
 
+<img src="Medios\39.png"/>
+
+
 * Debe agregar un item de string en strings.xml llamado resultado_aritmetica, debe contener el valor: El resultado es
+
+<img src="Medios\40.png"/>
 
 * Ejecute la aplicación y explique los resultados obtenidos
 
