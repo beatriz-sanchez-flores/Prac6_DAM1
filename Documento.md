@@ -169,3 +169,5 @@ Muestra el componente de interfaz de usuario de ScrollView. ScrollView es un Vie
 
 <img src="Medios\31.PNG"/>
 
+### Estructura del Activity Scrolling:
+
