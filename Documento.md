@@ -159,7 +159,7 @@ Pasaremos a anular el método onActivityResult(), vamos a Code > Override method
 
 * Ahora cuando envíes datos de la segunda Activity hacia la principal, deberías de obtener el mensaje.
 
-<img src="Medios\32.PNG"/>
+<img src="Medios\33.jpg"/>
 
 ### Tarea 1.6: Crear el activity de Scrolling
 
@@ -170,4 +170,37 @@ Muestra el componente de interfaz de usuario de ScrollView. ScrollView es un Vie
 <img src="Medios\31.PNG"/>
 
 ### Estructura del Activity Scrolling:
+
+<img src="Medios\33.PNG"/>
+
+* El texto es aleatorio, puede usar alguno de Wikipedia o un generador de texto, pero debe cumplir con un título del artículo, un subtítulo, Texto con saltos de línea
+
+* Es opcional agregar el botón regresar, pero para pruebas puede agregarlo y generar su manejador del evento clic y mandar a llamar al método finish(), para que observe que puede manipular el regreso, aunque también lo puede hacer con el botón de retroceso
+
+* Deslícese hacia arriba y hacia abajo para desplazarse por el artículo y observe que el subtítulo ahora se desplaza junto con el artículo mientras el título permanece en su lugar. Esto se debe a que el título está fuera del ScrollView
+
+<img src="Medios\33.PNG"/>
+
+<img src="Medios\34.jpg"/>
+
+### Tarea 1.7: Agregue un Activity Aritmética
+
+Con este Activity se pondrá a prueba todo lo aprendido hasta el momento, constará de dos EditText, de los cuales tomará sus valores, los convertirá a entero y obtendrá la suma de estos dos valores, los cuales serán mostrados mediante un Toast y en un TextView. Esta Activity estará conectada a la Segunda Activity, la cual será llamada desde el botón Sumar.
+
+* Agregue un nuevo Activity , yendo a la carpeta res, haga clic derecho sobre ella e ir a New> Activity> Empty Activity 
+
+<img src="Medios\36.png"/>
+<img src="Medios\37.png"/>
+
+* Utilizar la estructura mostrada con anterioridad, agregando los elementos necesarios con sus identificadores correspondientes
+
+* Obtenga la instancia del Button usando el método findViewById () .
+
+* Cree el método realizarSuma () y establezca el resultado de la suma en la propiedad text de etResultadoSuma
+
+* Debe agregar un item de string en strings.xml llamado resultado_aritmetica, debe contener el valor: El resultado es
+
+* Ejecute la aplicación y explique los resultados obtenidos
+
+<img src="Medios\35.jpg"/>
 
